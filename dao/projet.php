@@ -18,7 +18,7 @@ function getProjet(?string $id,int $limit,int $offset): ?array{
     $where = "";
     $params = [];//array vide
     if ($id){
-        $where = " WHERE id_project = ?";
+        $where = " WHERE association = ?";
         $params[] = $id;
     }
 
